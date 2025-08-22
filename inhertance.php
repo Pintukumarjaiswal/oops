@@ -34,12 +34,12 @@ class Manager extends Employee{
         }
 }
 
-class Fm extends Employee{
+class Fm extends Manager{
     public $m =5000;
     public $totalSalary;
 
     public function info(){
-            $this->totalSalary = $this->m+$this->salary;
+            $this->totalSalary = $this->m+$this->phone+$this->salary;
             echo "<h1>Fm Details</h1>";
             echo "<h2>Fm Name:</h2>".$this->name;
             echo "<h2>FM age:</h2>".$this->age;
